@@ -6,21 +6,23 @@
 /*   By: kaafkhar <kaafkhar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/27 06:13:38 by kaafkhar          #+#    #+#             */
-/*   Updated: 2023/12/27 06:35:57 by kaafkhar         ###   ########.fr       */
+/*   Updated: 2023/12/28 21:13:51 by kaafkhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putstr(char *str)
+int	ft_putstr(char *str)
 {
-    int i = 0;
-    if (str == NULL)
-        str = "(null)";
-    while(str[i])
-    {
-        write(1, &str[i], 1);
-        i++;
-    }
-    return i;
+	int	i;
+
+	i = 0;
+	if (str == NULL)
+		str = "(null)";
+	while (str[i])
+	{
+		write (1, &str[i], 1);
+		i++;
+	}
+	return (i);
 }

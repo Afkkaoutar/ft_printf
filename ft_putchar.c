@@ -6,15 +6,14 @@
 /*   By: kaafkhar <kaafkhar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/27 06:12:14 by kaafkhar          #+#    #+#             */
-/*   Updated: 2023/12/27 06:13:18 by kaafkhar         ###   ########.fr       */
+/*   Updated: 2023/12/28 21:08:16 by kaafkhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int    ft_putchar(char c)
+int	ft_putchar(char c)
 {
-    int len = 0;
-    len += write(1, &c, 1);
-    return len;
+	write (1, &c, 1);
+	return (1);
 }
